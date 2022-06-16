@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #3ea1db;
+  --blue-dark: #574ae8;
+  --white: #fff;
+  --title: #313131;
+  --text: #b6b6b6;
+  --linear: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  margin: 0 auto;
+}
+
+.page-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+header.blog-top {
+  background-image: var(--linear);
+  color: var(--white);
+  height: 25rem;
+  padding: 2rem;
+}
+
+header .blog-top--nav {
+  display: flex;
+  justify-content: space-between;
+  line-height: 3rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+header h2 {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+input {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  border: none;
+  color: var(--white);
+  font-family: "Inter", sans-serif;
+  height: 65px;
+  margin: 0 auto 4rem;
+  outline: none;
+  padding: 0 4rem;
+  width: 900rem;
+  font-size: 1.8rem;
+}
+
+::placeholder {
+  color: var(--text);
+  opacity: 0.5;
+  font-weight: 500;
+  font-size: 1.8rem;
+  font-family: "Inter", sans-serif;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--white);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--white);
+}
+
+.top-nav--search {
+  align-items: center;
+  color: var(--white);
+  display: flex;
+  height: 25rem;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+}
+
+.lupe {
+  align-self: center;
+  display: inline-flex;
+  inset: 1;
+  margin-bottom: 4rem;
+  padding: 0.7rem;
+  position: absolute;
+}
+
+main {
+  background-color: #f3f5f7;
+  height: auto;
+  max-width: 1440px;
+  padding: 2rem;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+article {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  margin: 2rem auto 0;
+  max-width: 900px;
+  padding: 2rem;
+}
+
+article h2 {
+  color: var(--title);
+  font-weight: 400;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+article p {
+  color: var(--text);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 3.2vh;
+}
+
+div > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+article .top-post {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2.2rem;
+  width: 100%;
+}
+
+footer{
+  display: flex ;
+  align-items: center;
+  justify-content: space-evenly;
+  background-image: var(--linear);
+  height: 5vh;
+  width: 100%;
+  color: var(--white);
+  font-size: 1.2rem;
+  text-transform: capitalize;
+}
+
+footer a{
+  text-decoration: none;
+  color: var(--title);
+  font-weight: bold;
+  margin-left: 1rem;
+  
+  }
+
+@media (max-width: 768px) {
+  input {
+    font-size: 1.6rem;
+  }
+
+  ::placeholder {
+    font-size: 1.6rem;
+  }
+
+  article p {
+    font-size: 1.6rem;
+  }
+
+  div > p {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 482px) {
+  input {
+    font-size: 1.4rem;
+  }
+
+  ::placeholder {
+    font-size: 1.4rem;
+  }
+
+  article p {
+    font-size: 1.4rem;
+  }
+
+  div > p {
+    font-size: 1.2rem;
+  }
+}

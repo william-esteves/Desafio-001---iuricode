@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Codelândia - Posts</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header class="blog-top">
+      <nav class="blog-top--nav">
+        <h2>Codelândia</h2>
+        <h2>blog</h2>
+      </nav>
+      <div class="top-nav--search">
+        <input type="search" placeholder="Pesquisar no blog">
+        <a href="#" class="lupe">
+          <img src="/assets/lupe.png" alt="">
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="posts-wrapper">
+        <article>
+          <div class="top-post">
+            <p class="post-time">02 de jul, 2021</p>
+            <img src="/assets/codicon_heart.png" alt="">
+          </div>
+          <h2>Agora é oficial: o Windows 11 está vindo</h2>
+          <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor
+            est. Nam vitae
+            finibus
+            ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis.</p>
+        </article>
+
+        <article>
+          <div class="top-post">
+            <p class="post-time">02 de jul, 2021</p>
+            <img src="/assets/codicon_heart.png" alt="">
+          </div>
+          <h2>Tim Berners-Lee vai leiloar código-fonte da web</h2>
+
+          <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor
+            est. Nam vitae
+            finibus
+            ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo.
+            Vestibulum
+            nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et,
+            interdum ullamcorper libero.</p>
+        </article>
+
+        <article>
+          <div class="top-post">
+            <p class="post-time">02 de jul, 2021</p>
+            <img src="/assets/codicon_heart.png" alt="">
+          </div>
+          <h2>Tem Firefox novo no pedaço e você vai querer migrar</h2>
+          <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor
+            est.</p>
+        </article>
+
+        <article>
+          <div class="top-post">
+            <p class="post-time">02 de jul, 2021</p>
+            <img src="/assets/codicon_heart.png" alt="">
+          </div>
+          <h2>John McAfee, criador do antivírus McAfee, morre</h2>
+          <p class="post-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vestibulum auctor
+            est. Nam vitae
+            finibus
+            ante. Duis lobortis tellus vel diam fringilla, eu ullamcorper ex iaculis. Praesent et auctor justo.
+            Vestibulum
+            nisl orci, lacinia venenatis leo sit amet, pulvinar tincidunt risus. Phasellus nisl dui, cursus a lectus et,
+            interdum ullamcorper libero.</p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+
+      <p> desafio 001 by<a href="https://www.linkedin.com/in/williamesteves/" target="_blank"
+          rel="noopener noreferrer">@william esteves</a></p>
+      <p>Codelândia 2022 - todos direitos reservados<a href="https://www.iuricode.com/" target="_blank"
+          rel="noopener noreferrer">@iuricode </a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    const sr = ScrollReveal({
+      origin: 'top',
+      distance: '40px',
+      duration: 2000,
+      reset: true
+    });
+
+    ScrollReveal().reveal('.posts-wrapper', { delay: 100 });
+    ScrollReveal().reveal('.post-time, h2', { delay: 200 });
+    ScrollReveal().reveal('.post-text, input, img', { delay: 300 });
+
+  </script>
+
+</body>
+
+</html>
